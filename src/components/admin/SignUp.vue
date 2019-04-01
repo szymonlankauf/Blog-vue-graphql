@@ -26,7 +26,7 @@
                         </p>
                     </div>
                     <p class="control">
-                        <button class="button is-primary is-fillwidth is-uppercase"></button>
+                        <button class="button is-primary is-fullwidth is-uppercase">Sign up</button>
                     </p>
                 </form>
             </div>
