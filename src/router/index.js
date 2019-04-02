@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import SignUp from '../components/admin/SignUp'
 import LogIn from '../components/admin/LogIn'
 import Users from '../components/admin/Users'
+import UserDetails from '../components/admin/UserDetails'
 
 Vue.use(Router)
 
@@ -25,6 +26,12 @@ export default new Router({
             path: '/admin/users',
             name: 'Users',
             component: Users
+        },
+        {
+            path: '/admin/users/:id',
+            name: 'UserDetails',
+            component: UserDetails,
+            props: true
         }
     ]
 })
