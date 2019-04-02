@@ -65,3 +65,17 @@ export const ALL_POSTS_QUERY = gql`query AllPostsQuery {
         }
     }
 }`
+
+export const POST_QUERY = gql`query PostQuery($slug: String!) {
+    post(slug: $slug) {
+        id
+        title
+        slug
+        content
+        user {
+            id
+            username
+            email
+        }
+    }
+}`
