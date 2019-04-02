@@ -4,6 +4,8 @@ import SignUp from '../components/admin/SignUp'
 import LogIn from '../components/admin/LogIn'
 import Users from '../components/admin/Users'
 import UserDetails from '../components/admin/UserDetails'
+import AddPost from '@/components/admin/AddPost'
+import Posts from '@/components/admin/Posts'
 
 Vue.use(Router)
 
@@ -32,6 +34,16 @@ export default new Router({
             name: 'UserDetails',
             component: UserDetails,
             props: true
+        },
+        {
+            path: '/admin/posts/new',
+            name: 'AddPost',
+            component: AddPost
+        },
+        {
+            path: '/admin/posts',
+            name: 'Posts',
+            component: Posts
         }
     ]
 })
