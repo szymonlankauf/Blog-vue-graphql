@@ -19,3 +19,10 @@ export const LOGIN_MUTATION = gql`mutation LoginMutation($email: String!, $passw
     )
 }`
 
+export const ALL_USERS_QUERY = gql`query AllUsersQuery{
+    allUsers {
+        id
+        username
+        email
+    }
+}`
